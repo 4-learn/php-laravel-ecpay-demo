@@ -9,3 +9,4 @@ Route::get('/', function () {
 use App\Http\Controllers\EcpayController;
 
 Route::get('/ecpay/test', [EcpayController::class, 'checkout']);
+Route::post('/ecpay/checkout', [EcpayController::class, 'checkout']);
